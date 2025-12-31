@@ -1,0 +1,8 @@
+baseURL = "https://example.org/"
+title = "My big bazar"
+defaultContentLanguage = "en"
+theme = "dream"
+
+[params]
+  zenMode = false
+  avatar = "img/avatar.png"

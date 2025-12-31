@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Category1 on My big bazar</title>
+    <link>http://localhost:1313/categories/category1/</link>
+    <description>Recent content in Category1 on My big bazar</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 31 Dec 2025 11:59:19 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/category1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello</title>
+      <link>http://localhost:1313/posts/hello/index.md/</link>
+      <pubDate>Wed, 31 Dec 2025 11:59:19 +0100</pubDate>
+      <guid>http://localhost:1313/posts/hello/index.md/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

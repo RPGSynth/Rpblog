@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Despair on My big bazar</title>
+    <link>http://localhost:1313/tags/despair/</link>
+    <description>Recent content in Despair on My big bazar</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 31 Dec 2025 12:53:43 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/despair/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading Kierkegaard: The Sickness Unto Death</title>
+      <link>http://localhost:1313/posts/kierkegaard/</link>
+      <pubDate>Wed, 31 Dec 2025 12:53:43 +0100</pubDate>
+      <guid>http://localhost:1313/posts/kierkegaard/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This page gathers my thoughts while I&amp;rsquo;m reading Søren Kierkegaard’s essay &lt;strong&gt;The Sickness Unto Death&lt;/strong&gt;, chapter by chapter.&lt;br&gt;&#xA;I hope you enjoy it as much as I do!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;&#xA;&lt;p&gt;My first impression is that Kierkegaard does &lt;strong&gt;not&lt;/strong&gt; want his work to be compared to the work of scientists. I’m not sure whether this comes from a broader, traditional opposition (in his time) between theology and science, or whether it is something more singular to Kierkegaard’s own vision.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
