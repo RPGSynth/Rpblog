@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/hello/</link>
       <pubDate>Wed, 31 Dec 2025 11:59:19 +0100</pubDate>
       <guid>http://localhost:1313/posts/hello/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Welcome to the first page of this blog.&lt;br&gt;&#xA;Starting feels a little odd—quiet, almost like walking into an empty room and beginning to speak.&lt;/p&gt;&#xA;&lt;p&gt;This post is mostly here for the record. There may not be much yet… but maybe that’s the point.&lt;br&gt;&#xA;To myself in five years: hi :D&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
