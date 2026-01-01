@@ -1,4 +1,4 @@
----
+﻿---
 title: "Reading Kierkegaard: The Sickness Unto Death"
 date: 2025-12-31T12:53:43+01:00
 author: Rob
@@ -9,6 +9,7 @@ tags:
   - existentialism
   - theology
   - despair
+toc: true
 draft: false
 cover: cover.jpg
 images:
@@ -79,6 +80,32 @@ At this stage he still doesn’t give the full name of the sickness unto death y
 
 This chapter is, in many ways, where Kierkegaard lays down the foundations of everything that follows. If someone wanted to get a strong sense of his thought without going *too* deep into the essay, I honestly think this chapter could almost be enough. I even hesitated to continue reading—partly because it already feels so complete, and partly because it’s so dense that you want to sit with it for a while.
 
-It’s also just… beautifully written. There are moments of genuine literary ecstasy, the kind where you struggle *not* to highlight every single line. Some pages are almost ridiculous in how good they are.
+It’s also just… beautifully written. There are moments of genuine literary ecstasy, the kind where you struggle *not* to highlight every single line. Some pages are almost ridiculous in how good they are. {{< figure src="Screenshots/1.jpg" caption="I am not lying to you when I tell you there is a lot ! " >}}
 
-I’ll do my best to keep what follows short and readable, but fair warning: there’s a lot to unpack !
+### Despair and its forms
+
+In my edition of the essay, this sentence "That Despair is the Sickness Unto Death" is printed in **big, bold letters**—and my copy is (sadly? proudly?) being absolutely *murdered* by my highlighter, so the point is not exactly subtle (I warned you this part is rich). This is because this idea is the central claim of the essay: despair—whatever despair really is—brings about a kind of true death, deeper than bodily death. That’s exactly what drew me in: I wanted to understand the feeling of desperation better, and see what intellectuals had to say about it. 
+
+Kierkegaard goes straight to the point and I have to cite him:
+
+> “Despair is a sickness of the spirit, in the self. [...] It may assume a triple form: despair at not being conscious of having a self; despair at not willing to be oneself; and despair at willing to be oneself.”
+
+He then proceeds to hit us with a definition that feels almost hypnotic:
+
+> “Man is spirit; but what is spirit? Spirit is the self. But what is the self? The self is a relation which relates itself to its own self.”
+
+Pretty mesmerizing, honestly.
+
+From there he starts talking in terms of **relations**. Which means… we can represent his ideas with charts! This is great news for me, because I love charts.
+
+He argues that the human being is a **synthesis**—between the infinite and the finite, the spirit and the body. Personally I’m not totally convinced by the spirit-vs-body framing anymore; it feels a bit dated to me. Still, Kierkegaard uses this language to build something more subtle, and then he goes into a (honestly convoluted) discussion that I’ve tried to summarize with a couple of graphs. This is also where he introduces his **three** forms of despair (and yes: three is a very satisfying number which feels somewhat subjective).
+
+{{< figure src="Graphs/G1.png" caption="The soul as a relation between the spirit and the body." >}}
+{{< figure src="Graphs/G2.png" caption="The self as a relation that relates itself to itself." >}}
+
+He sees the soul as a relation between spirit and body. And he argues that the **self** appears when this relation *turns back on itself*—when the relation relates to itself. I find this idea genuinely elegant: it captures something deeply recursive about inward feelings, the way we can feel, then feel ourselves feeling, then reflect on that reflection… and so on.
+
+He then says this “self-relation” can be understood in two ways: one where the relation constitutes itself (see the graph above), and one where it is constituted by another—namely, God (see below).
+
+{{< figure src="Graphs/G3.png" caption="The self as a relation that relates itself to itself." >}}
+

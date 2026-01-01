@@ -8,5 +8,9 @@ theme = "dream"
   avatar = "img/avatar.png"
   lightTheme = "emerald"
   darkTheme = "forest"
+  showTableOfContents = false
+
+
 [frontmatter]
   lastmod = [":fileModTime", "lastmod", "date"]
+
