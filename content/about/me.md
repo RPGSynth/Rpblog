@@ -3,9 +3,9 @@ title: "About me"
 draft: false
 ---
 
-Hi! I'm ...
+Hi! I’m a young data scientist— and, dare I say, a humanist too.  
+I like studying a bit of everything, and this blog is my place to collect those curiosities: ideas, readings, side projects, and whatever else catches my attention.
 
-- I write about science (notes, explanations, experiments)
-- I also write personal stuff (journal, ideas, projects)
+I hope you find something interesting here.
 
-Welcome to my big bazar.
+Welcome to my big bazaar.

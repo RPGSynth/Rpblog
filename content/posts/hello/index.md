@@ -1,8 +1,8 @@
 ---
 title: Hello
 date: 2025-12-31T11:59:19+01:00
-lastmod: 2025-12-31T11:59:19+01:00
-author: Robert
+lastmod: 2026-01-01T11:59:19+01:00
+author: Rob
 # avatar: /img/author.jpg
 # authorlink: https://author.site
 cover: avatar.png

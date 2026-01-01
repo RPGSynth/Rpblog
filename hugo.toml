@@ -6,3 +6,7 @@ theme = "dream"
 [params]
   zenMode = false
   avatar = "img/avatar.png"
+  lightTheme = "emerald"
+  darkTheme = "forest"
+[frontmatter]
+  lastmod = [":fileModTime", "lastmod", "date"]

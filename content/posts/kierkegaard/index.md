@@ -1,8 +1,7 @@
 ---
 title: "Reading Kierkegaard: The Sickness Unto Death"
 date: 2025-12-31T12:53:43+01:00
-lastmod: 2025-12-31T12:53:43+01:00
-author: Robert 
+author: Rob
 categories:
   - philosophy
 tags:
@@ -31,15 +30,15 @@ In other words, if a text is *formally correct* but fails to *edify*—to build 
 
 Kierkegaard seems to criticize scientific thinking when it presents itself as *the* defining ideal of humanity. He resists the idea that understanding should come primarily from neutral, exterior observation—knowledge “from the outside,” for its own sake. Instead, he opposes this to what he calls **Christian heroism**, rooted in holiness.
 
-For Kierkegaard, the true concern must be tied to:
+For Kierkegaard, the true concern must be tied to our inwards feelings:
 
-> “the reality of personal existence.”
+> “Concern implies relationship to life to the reality of personal existence.”
 
 This reminds me that Kierkegaard is, before anything else, a Christian believer.[^belief-note] His suspicion toward “neutral” understanding is very strong—almost the reverse of modern intellectual instincts. Today, neutrality often feels like the holy grail of intelligence; for him, holiness is the only seriousness that matters.
 
 He writes:
 
-> “Seriousness is the edifying.”
+> “Seriousness again is the edifying.”
 
 I take this to mean: the only seriousness he ultimately recognizes is the seriousness of the spiritual life—seriousness before God.
 
@@ -50,3 +49,36 @@ This will matter in the chapters that follow, because despair is a deeply polari
 [^belief-note]: “Christian” could likely be replaced with “religious” in a broader sense (depending on what one wants to emphasize), but Kierkegaard’s framework here is explicitly Christian.
 
 ## Introduction
+In the *Introduction*, Kierkegaard mostly present the idea that there exists a true sickness that is worse than death or should I say worse than bodily death. 
+
+He starts with a quote from the Bible:
+
+> “So then Lazarus is dead, and yet this sickness was not unto death; [...]”
+
+That caught my attention because direct Bible quotes are not *that* frequent in the essay (at least so far, this is the only one I’ve met). And it also works as a perfect summary of the core idea: **bodily death is not the “true” death**. So the “sickness unto death” has to be something else—something deeper.
+
+Kierkegaard says it quite clearly:
+
+> “Christianly understood death is by no means the last thing of all, hence it is only a little event within that which is all, an eternal life; [...]”
+
+From a Christian point of view, death isn’t the final word, in fact it is pretty positive. There is, as he says, “infinitely much more hope” than what we get from a purely human perspective. So if *not even death* is the sickness unto death… then the title becomes even more mesmerizing. If death isn’t it, what on earth is?
+
+And then Kierkegaard starts describing this thing. He is genuinely scared of it—and he thinks we should be scared too. He calls it:
+
+> “An evil which as such does not know of”
+
+That’s such a strange and interesting idea: an evil that can exist *without even knowing itself*, like something hidden in plain sight. He also says that non-believers don’t really understand it. He even goes pretty far and compares the non-believer to a child in one of his (numerous) beautiful phrasing :
+
+> “Such is the relation between the natural man and the Christian, it is like the relationship between a child and a man: what the child shudders at the man regards as nothing. The child does not know what the dreadful is; this the man knows, and he shudders at it.”
+
+Not the nicest thing to say about non-believers — but it makes sense if we take seriously how Kierkegaard sees things. The “dreadful” here is not bodily death; it’s something spiritual, something deeper. And he argues that the Christian (and he explicitly says “the Christian,” so he is including heathens *as outside of that*) has a kind of courage that non-believers don’t share: the courage to face this dreadful thing.
+
+At this stage he still doesn’t give the full name of the sickness unto death yet, but the shape of it is already there: it’s worse than bodily death, it can hide itself, and it has to do with what a person is in relation to the divine or what he will call later the eternal.
+
+## Chapter 1: That Despair is the Sickness Unto Death
+
+This chapter is, in many ways, where Kierkegaard lays down the foundations of everything that follows. If someone wanted to get a strong sense of his thought without going *too* deep into the essay, I honestly think this chapter could almost be enough. I even hesitated to continue reading—partly because it already feels so complete, and partly because it’s so dense that you want to sit with it for a while.
+
+It’s also just… beautifully written. There are moments of genuine literary ecstasy, the kind where you struggle *not* to highlight every single line. Some pages are almost ridiculous in how good they are.
+
+I’ll do my best to keep what follows short and readable, but fair warning: there’s a lot to unpack !
