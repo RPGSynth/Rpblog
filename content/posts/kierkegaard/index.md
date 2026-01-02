@@ -17,7 +17,7 @@ images:
 ---
 
 *This page gathers my thoughts while I'm reading Søren Kierkegaard’s essay **The Sickness Unto Death**, chapter by chapter.  
-I hope you enjoy it as much as I do!*
+I hope you enjoy it as much as I do !*
 
 ## Preface
 
@@ -103,9 +103,32 @@ He argues that the human being is a **synthesis**—between the infinite and the
 {{< figure src="Graphs/G1.png" caption="The soul as a relation between the spirit and the body." >}}
 {{< figure src="Graphs/G2.png" caption="The self as a relation that relates itself to itself." >}}
 
-He sees the soul as a relation between spirit and body. And he argues that the **self** appears when this relation *turns back on itself*—when the relation relates to itself. I find this idea genuinely elegant: it captures something deeply recursive about inward feelings, the way we can feel, then feel ourselves feeling, then reflect on that reflection… and so on.
+He sees the soul as a relation between spirit and body. And he argues that the **self** appears when this relation *turns back on itself*—when the relation relates to itself. I find this idea genuinely elegant: it captures something deeply recursive about inward feelings, the way we can feel, then feel ourselves feeling, then reflect on that reflection… and so on. I never quite manged to put words on this feelings and I feel like he did. 
 
 He then says this “self-relation” can be understood in two ways: one where the relation constitutes itself (see the graph above), and one where it is constituted by another—namely, God (see below).
+{{< figure src="Graphs/G3.png" caption="The self as a relation that relates itself to itself and god." >}}
+Here, because Kierkegaard is a believer—a **Christian** believer—he insists that the synthesis (this recursive relation between spirit and body) is also related to **God**. So if a person is not properly related to God, their synthesis—meaning their self[^self-def-note]—is doomed to fall out of balance. And for Kierkegaard, that imbalance is exactly what opens the door to despair.
 
-{{< figure src="Graphs/G3.png" caption="The self as a relation that relates itself to itself." >}}
+He argues that if the self *constitutes itself*—if God has no role in it—then despair can only take one form: **not willing to be one’s own self**. In that secular framework, there shouldn’t really be “despair at willing to be oneself,” because if *you* are the one defining what you are at every moment, then willing to be yourself shouldn’t fundamentally be a problem. This is actually interesting, because it starts to sound a bit like some non-believer existentialism.
 
+[^self-def-note]: The “self,” the “synthesis” between spirit and body, and the “relation relating itself to itself” are all, for Kierkegaard, different ways of pointing to the same idea. I use them interchangeably (more or less the way he does).
+
+Kierkegaard writes:
+
+> “The self cannot of itself attain and remain in equilibrium and rest by itself, but only by relating itself to the Power which constituted the whole relation.”
+
+So without acknowledging God (the divine), the self cannot remain stable: it is destined to become unbalanced. And this is where Kierkegaard’s warning becomes very strong: **trying to become yourself without relating yourself to God is dangerous**. In fact, you may sink deeper into despair, because you are trying to “achieve yourself” through your own effort alone. For Kierkegaard, you can’t just work on yourself to find yourself—you must also find yourself *in God*.
+
+In that sense, “despair at willing to be yourself” becomes, for him, another form of despair that ultimately still belongs under the larger umbrella of “not willing to be yourself”: by willing to be yourself so intensely, you end up refusing the only grounding that can truly hold the self together.
+
+He warns:
+
+> “If a man in despair is as he thinks conscious of his despair, [...] and if by himself only he would abolish the despair; then by all labor he expends he is only laboring himself deeper and deeper into despair.”
+
+This is one of the moments where the text shows how deeply theological it is. Kierkegaard doesn’t really try to “prove” that the secular (no-God) view is wrong. He assumes it is incomplete, and then he pushes forward from there. He tells us: even the project of pursuing your own self—if it is done without God—is itself despair.
+
+Of course, if you don’t believe in God, you might feel that the first definition is enough—and that trying to be yourself cannot, *by itself*, be despair. Kierkegaard refuses that. And honestly, at this point it’s hard to sort everything into simple “right” or “wrong.” I also don’t think that’s what the essay is trying to do: it never sets out to prove or disprove the existence of God. God is assumed as a given, and the whole argument unfolds from that starting point.
+
+
+
+### Possibility and Actuality of
