@@ -6,8 +6,15 @@
     <description>Recent content in Tags on My big bazar</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Jan 2026 20:39:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 22:41:28 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shaders</title>
+      <link>http://localhost:1313/tags/shaders/</link>
+      <pubDate>Fri, 02 Jan 2026 09:22:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/shaders/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Despair</title>
       <link>http://localhost:1313/tags/despair/</link>

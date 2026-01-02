@@ -11,9 +11,9 @@ tags:
   - despair
 toc: true
 draft: false
-cover: cover.jpg
+cover: kk_cover.jpg
 images:
-  - cover.jpg
+  - kk_cover.jpg
 ---
 
 *This page gathers my thoughts while I'm reading Søren Kierkegaard’s essay **The Sickness Unto Death**, chapter by chapter.  

@@ -10,6 +10,8 @@ theme = "dream"
   darkTheme = "forest"
   showTableOfContents = false
 
+  [params.advanced]
+    customCSS = ["css/custom.css"]
 
 [frontmatter]
   lastmod = [":fileModTime", "lastmod", "date"]
