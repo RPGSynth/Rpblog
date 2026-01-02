@@ -19,7 +19,9 @@ images:
 *This page gathers my thoughts while I'm reading Søren Kierkegaard’s essay **The Sickness Unto Death**, chapter by chapter.  
 I hope you enjoy it as much as I do !*
 
-## Preface
+<!--more-->
+
+{{< chapter title="Preface" >}}
 
 My first impression is that Kierkegaard does **not** want his work to be compared to the work of scientists. I’m not sure whether this comes from a broader, traditional opposition (in his time) between theology and science, or whether it is something more singular to Kierkegaard’s own vision.
 
@@ -47,9 +49,11 @@ Finally, Kierkegaard anticipates that the essay’s form may seem convoluted. He
 
 This will matter in the chapters that follow, because despair is a deeply polarized idea in Kierkegaard—what he calls a **dialectical** concept.
 
-[^belief-note]: “Christian” could likely be replaced with “religious” in a broader sense (depending on what one wants to emphasize), but Kierkegaard’s framework here is explicitly Christian.
+[^belief-note]: "Christian" could likely be replaced with "religious" in a broader sense (depending on what one wants to emphasize), but Kierkegaard's framework here is explicitly Christian.
 
-## Introduction
+{{< /chapter >}}
+
+{{< chapter title="Introduction" >}}
 In the *Introduction*, Kierkegaard mostly present the idea that there exists a true sickness that is worse than death or should I say worse than bodily death. 
 
 He starts with a quote from the Bible:
@@ -76,7 +80,9 @@ Not the nicest thing to say about non-believers — but it makes sense if we tak
 
 At this stage he still doesn’t give the full name of the sickness unto death yet, but the shape of it is already there: it’s worse than bodily death, it can hide itself, and it has to do with what a person is in relation to the divine or what he will call later the eternal.
 
-## Chapter 1: That Despair is the Sickness Unto Death
+{{< /chapter >}}
+
+{{< chapter title="Chapter 1: That Despair is the Sickness Unto Death" >}}
 
 This chapter is, in many ways, where Kierkegaard lays down the foundations of everything that follows. If someone wanted to get a strong sense of his thought without going *too* deep into the essay, I honestly think this chapter could almost be enough. I even hesitated to continue reading—partly because it already feels so complete, and partly because it’s so dense that you want to sit with it for a while.
 
@@ -117,7 +123,7 @@ Kierkegaard writes:
 
 > “The self cannot of itself attain and remain in equilibrium and rest by itself, but only by relating itself to the Power which constituted the whole relation.”
 
-So without acknowledging God (the divine), the self cannot remain stable: it is destined to become unbalanced. And this is where Kierkegaard’s warning becomes very strong: **trying to become yourself without relating yourself to God is dangerous**. In fact, you may sink deeper into despair, because you are trying to “achieve yourself” through your own effort alone. For Kierkegaard, you can’t just work on yourself to find yourself—you must also find yourself *in God*.
+So without acknowledging God (the divine), the self cannot remain stable: it is destined to become unbalanced. And this is where Kierkegaard’s warning becomes strong: **trying to become yourself without relating yourself to God is dangerous**. In fact, you may sink deeper into despair, because you are trying to “achieve yourself” through your own effort alone. For Kierkegaard, you can’t just work on yourself to find yourself—you must also find yourself *in God*.
 
 In that sense, “despair at willing to be yourself” becomes, for him, another form of despair that ultimately still belongs under the larger umbrella of “not willing to be yourself”: by willing to be yourself so intensely, you end up refusing the only grounding that can truly hold the self together.
 
@@ -130,5 +136,5 @@ This is one of the moments where the text shows how deeply theological it is. Ki
 Of course, if you don’t believe in God, you might feel that the first definition is enough—and that trying to be yourself cannot, *by itself*, be despair. Kierkegaard refuses that. And honestly, at this point it’s hard to sort everything into simple “right” or “wrong.” I also don’t think that’s what the essay is trying to do: it never sets out to prove or disprove the existence of God. God is assumed as a given, and the whole argument unfolds from that starting point.
 
 
-
-### Possibility and Actuality of
+### Possibility and Actuality of Despair
+{{< /chapter >}}

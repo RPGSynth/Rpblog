@@ -14,3 +14,8 @@ theme = "dream"
 [frontmatter]
   lastmod = [":fileModTime", "lastmod", "date"]
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
