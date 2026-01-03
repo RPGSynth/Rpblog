@@ -1,7 +1,9 @@
-﻿.float-left { float: left; max-width: 45%; margin: 0 1rem 1rem 0; }
+.float-left { float: left; max-width: 45%; margin: 0 1rem 1rem 0; }
 .float-right { float: right; max-width: 45%; margin: 0 0 1rem 1rem; }
 .clear-floats { clear: both; }
-
+.mathjax { display: block; clear: both; }
+mjx-container[display="true"] { display: block; clear: both; }
+.katex-display { clear: both; }
 @media (max-width: 768px) {
   .float-left, .float-right { float: none; margin: 0 auto 1rem; max-width: 100%; }
 }

@@ -36,7 +36,7 @@ Most of what you’ll find here will connect closely with my Game Adventures pag
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2026-01-02T09:22:00+01:00">
-    <meta property="article:modified_time" content="2026-01-02T22:49:00+01:00">
+    <meta property="article:modified_time" content="2026-01-03T16:49:49+01:00">
     <meta property="article:tag" content="Shaders">
     <meta property="og:image" content="http://localhost:1313/posts/shaders/shaders_cover.png">
 
@@ -269,8 +269,8 @@ Most of what you’ll find here will connect closely with my Game Adventures pag
   <meta itemprop="description" content="I realized I’m pretty fascinated by shaders, yet I’d never actually taken the time to understand them. This little page exists to fix that.
 Most of what you’ll find here will connect closely with my Game Adventures page, so make sure to check that out too!">
   <meta itemprop="datePublished" content="2026-01-02T09:22:00+01:00">
-  <meta itemprop="dateModified" content="2026-01-02T22:49:00+01:00">
-  <meta itemprop="wordCount" content="239">
+  <meta itemprop="dateModified" content="2026-01-03T16:49:49+01:00">
+  <meta itemprop="wordCount" content="1283">
   <meta itemprop="image" content="http://localhost:1313/posts/shaders/shaders_cover.png">
   <meta itemprop="keywords" content="Shaders">
 
@@ -281,12 +281,12 @@ Most of what you’ll find here will connect closely with my Game Adventures pag
             Friday, Jan 2, 2026
           
 
-          | <span>2 minute read</span>
+          | <span>7 minute read</span>
 
           
           | <span>Updated at
             
-              Friday, Jan 2, 2026
+              Saturday, Jan 3, 2026
             </span>
           
         </p>
@@ -365,8 +365,126 @@ Most of what you’ll find here will connect closely with my Game Adventures pag
     </figcaption>
 </figure>
 
-<p>Don’t mind the checker shader, we’ll talk about it a bit later down the line. Now the real question is: how do we mess with a texture so we can create a black outline around it? As usual, shaders involve quite a lot of math… but that’s what’s so fascinating, so let’s try to understand it!</p>
-<p>At the base of my texture is the <strong>UV</strong>.</p>
+<p>Don’t mind the checker shader, we’ll talk about it a bit later down the line. For now, the real question is: <strong>how do we mess with a mesh so we can create a black outline around it?</strong><br>
+As usual, shaders involve quite a lot of math… but that’s also what makes them fascinating, so let’s try to understand what’s actually going on.</p>
+<p>At the base of everything is the <strong>UV</strong> of the mesh. From what I understand, UVs are basically the coordinate system of a mesh once it’s been flattened. Since a mesh is unwrapped onto a plane, UV space is essentially a 2D coordinate system with coordinates called <strong>u</strong> and <strong>v</strong>.</p>
+<p>Visually, UVs go from $(0,0)$ to $(1,1)$:</p>
+<p>• bottom-left corner → $(0,0)$<br>
+• bottom-right corner → $(1,0)$<br>
+• top-left corner → $(0,1)$<br>
+• top-right corner → $(1,1)$</p>
+<p>So you can think of <strong>u</strong> as “left → right across the tile” and <strong>v</strong> as “bottom → top across the tile”.</p>
+<p>In Unity, the UV node outputs a <code>float4</code>, meaning a $4 \times 1$ vector per pixel<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. As far as I know, the $z$ and $w$ components are just $0$, so we ignore them. What we really keep are the <strong>u</strong> and <strong>v</strong> components.
+<figure><img src="/posts/shaders/img/shaders_uv.png"
+    alt="Visualising the UV field for a given mesh."><figcaption>
+      <p>Visualising the UV field for a given mesh.</p>
+    </figcaption>
+</figure>
+</p>
+<p>Now an important detail (and honestly one of the coolest parts): <strong>this is not computed once for the whole mesh</strong>. The GPU runs the same little program for <em>every pixel</em> of the mesh, in parallel. Each pixel gets its own UV value, and the shader does the same operations independently.</p>
+<p>Now here’s the neat trick.</p>
+<p>If <strong>u</strong> represents the distance to the <em>left</em> edge, then $1 - u$ represents the distance to the <em>right</em> edge.<br>
+Similarly, if <strong>v</strong> is the distance to the <em>bottom</em> edge, then $1 - v$ is the distance to the <em>top</em> edge. What we want is not the distance to just one edge, but the distance to <strong>the closest edge</strong>, no matter which side we’re looking at. <strong>That’s equivalent of taking the minimum of the 4 possible distances</strong>.
+In Unity Shader Graph, this is usually done in two steps. First, we handle left/right and top/bottom separately:</p>
+<p>$$
+\text{minU} = \min(u,1-u), \qquad \text{minV} = \min(v,1-v)
+$$</p>
+<p>At this point, we already get zeros near the edges and corners, and we don’t care anymore <em>which</em> side we’re on. Then we combine everything by taking another minimum:</p>
+<p>$$
+\text{edgeDist} = \min(\text{minU},\text{minV})
+$$</p>
+<p>This value which can be seen as an <strong>edge distance</strong> is computed for every pixel. The resulting field lives in the range $[0,0.5]$:<br>
+• $0$ exactly on the edges<br>
+• $0.5$ at the center of the texture<br>
+<figure><img src="/posts/shaders/img/shaders_minimum.png"
+    alt="Minimum operations isolates the edges."><figcaption>
+      <p>Minimum operations isolates the edges.</p>
+    </figcaption>
+</figure>
+
+Here’s a tiny example just for <strong>u</strong>. In UV space, going left → right, the uv values could look like this (same on each row):</p>
+<div>
+$$
+u =
+\begin{bmatrix}
+0 & \tfrac13 & \tfrac23 & 1 \\
+0 & \tfrac13 & \tfrac23 & 1 \\
+0 & \tfrac13 & \tfrac23 & 1 \\
+0 & \tfrac13 & \tfrac23 & 1
+\end{bmatrix}
+$$
+</div>
+<p>Then the shader also implicitly has access to $1-u$ for each fragment:</p>
+<div>
+$$
+1-u =
+\begin{bmatrix}
+1 & \tfrac23 & \tfrac13 & 0 \\
+1 & \tfrac23 & \tfrac13 & 0 \\
+1 & \tfrac23 & \tfrac13 & 0 \\
+1 & \tfrac23 & \tfrac13 & 0
+\end{bmatrix}
+$$
+</div>
+<p>Now we apply the operation $\min(u,1-u)$ this minimum is computed <strong>cell-by-cell</strong>, all at the same time on the GPU:</p>
+<div>
+$$
+\min(u,1-u) =
+\begin{bmatrix}
+0 & \tfrac13 & \tfrac13 & 0 \\
+0 & \tfrac13 & \tfrac13 & 0 \\
+0 & \tfrac13 & \tfrac13 & 0 \\
+0 & \tfrac13 & \tfrac13 & 0
+\end{bmatrix}
+$$
+</div>
+<p>So without caring about “left” or “right” anymore, we turned <em>both edges</em> into zeros. That’s exactly what we want. Same idea for <strong>v</strong> (bottom/top), except it varies vertically instead of horizontally.</p>
+<p>Now we want to turn this smooth edge distance field into something usable as a mask. For that, we use a step function. First, here’s the definition (so we all agree on what “step” means):</p>
+<div>
+$$
+\text{step}(w,x)=
+\begin{cases}
+0, & x < w \\
+1, & x \ge w
+\end{cases}
+$$
+</div>
+<p>In our shader, we use it like this:</p>
+<p>$$
+\text{mask} = \mathrm{step}(w;\text{edgeDist}), \qquad w = \text{OutlineWidth}
+$$</p>
+<p>So if $\text{edgeDist} &lt; w$ (close to the border), the mask becomes $0$.<br>
+And if $\text{edgeDist} \ge w$ (more inside the texture), the mask becomes $1$.
+This means the larger $w$ is, the thicker the outline. Once $w$ reaches $0.5$, everything becomes $0$ and the whole texture is outlined (aka fully black, not very useful).
+What matters is that this step operation discretizes the field into $0$s and $1$s, which means we can now treat it as a <strong>boolean mask</strong>.</p>
+<p>At this point, all that’s left to do is to mix (interpolate) two textures a base texture and a black (or coloured) outline texture.
+To do that, we use a simple linear interpolation, also known as <strong>LERP</strong> (this will come back A LOT, but its not mandatory to understand it deeply for now). With a mask called $t$, the interpolation is:</p>
+<p>$$
+\mathrm{lerp}(A,B,t) = A(1-t) + Bt
+$$</p>
+<p>In our case, this becomes:</p>
+<p>$$
+\text{finalRGB} = \text{outlineRGB}(1-\text{mask}) + \text{baseRGB}(\text{mask})
+$$
+When I write <em>baseRGB</em> or <em>outlineRGB</em>, I’m talking about <strong>colors</strong>, not some abstract vectors. In shaders, colors are almost always represented as RGB values: three numbers corresponding to the <strong>Red</strong>, <strong>Green</strong>, and <strong>Blue</strong> channels.
+So <em>baseRGB</em> is just the color sampled from the base texture at the current UV picked at $\text{mask} = 1$, and <em>outlineRGB</em> is the color we want for the outline (black in our case, but it could be anything) picked at $\text{mask} = 0$. Technically these are 4-component vectors, but thinking of them as “colors” is perfectly fine here.</p>
+<p>And… that’s it.  We now have a clean outline shader driven purely by UV math, pretty neat ✨
+<figure><img src="/posts/shaders/img/shaders_lerp.png"
+    alt="Discretizing and Lerping RGB&rsquo;s allows to get the final mesh."><figcaption>
+      <p>Discretizing and Lerping RGB&rsquo;s allows to get the final mesh.</p>
+    </figcaption>
+</figure>
+</p>
+<h2 id="a-smooth-piece-shadow-shader">A Smooth piece Shadow Shader</h2>
+<p>As I was making my board game I realised using flat textures for my piece meshes was not looking very nice. In practice many board games have a small shader on the pieces that adds a diagonal shadow on top of the pieces. It makes them feel more gamey or cartooney but also somehow a bit more believable. My pieces lacked this so I had to make this shader myself.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>From here on, when I say “pixel”, I really mean a <em>fragment</em>: one execution of the fragment shader for a given UV. It’s technical linguo and not necessary at this level, but I’m mentioning it once just to be clean.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
         
       </section>
@@ -386,6 +504,7 @@ Most of what you’ll find here will connect closely with my Game Adventures pag
       <nav id="TableOfContents">
   <ul>
     <li><a href="#a-coloured-outline-shader">A Coloured Outline Shader</a></li>
+    <li><a href="#a-smooth-piece-shadow-shader">A Smooth piece Shadow Shader</a></li>
   </ul>
 </nav>
     
@@ -556,10 +675,29 @@ I like studying a bit of everything, and this blog is my place to collect those 
 
 
 
+  
+
 
 
 
     
+
+    
+      <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [
+        ['\\[', '\\]'],
+        ['$$', '$$'],
+      ], 
+      inlineMath: [
+        ['\\(', '\\)'],
+        ['$', '$'],
+      ], 
+    },
+  }
+</script>
 
     
 
