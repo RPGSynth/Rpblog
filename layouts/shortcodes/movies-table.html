@@ -1,0 +1,44 @@
+{{ $movies := site.Data.movies | default (slice) }}
+{{ $sorted := sort $movies "rating" "desc" }}
+<div class="movies-table-wrapper" data-movies>
+  <div class="movies-controls">
+    <label class="movies-filter-label">
+      Filter
+      <input type="search" class="movies-filter" placeholder="Title, tag, or rating" data-movies-filter />
+    </label>
+    <div class="movies-legend">Click a column header to sort.</div>
+  </div>
+  <table class="movies-table" data-movies-table>
+    <thead>
+      <tr>
+        <th scope="col" data-sort="title" data-type="text">Title</th>
+        <th scope="col" data-sort="rating" data-type="number" aria-sort="descending">Rating</th>
+        <th scope="col" data-sort="tags" data-type="text">Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $sorted }}
+      {{ $tags := .tags }}
+      {{ if not (reflect.IsSlice $tags) }}
+        {{ if $tags }}
+          {{ $tags = slice $tags }}
+        {{ else }}
+          {{ $tags = slice }}
+        {{ end }}
+      {{ end }}
+      {{ $search := printf "%s %s %s" .title (printf "%.2f" .rating) (delimit $tags " ") | lower }}
+      <tr data-search="{{ $search }}">
+        <td data-key="title">{{ .title }}</td>
+        <td data-key="rating" data-value="{{ printf "%.2f" .rating }}">
+          <span class="rating-pill">{{ printf "%.1f" .rating }}</span>
+        </td>
+        <td data-key="tags">
+          {{ range $tags }}
+          <span class="tag-pill">{{ . }}</span>
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>

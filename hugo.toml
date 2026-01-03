@@ -12,6 +12,7 @@ theme = "dream"
 
   [params.advanced]
     customCSS = ["css/custom.css"]
+    customJS = ["js/movies-table.js"]
 
 [frontmatter]
   lastmod = [":fileModTime", "lastmod", "date"]

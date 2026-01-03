@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reviews on My big bazar</title>
+    <link>http://localhost:1313/tags/reviews/</link>
+    <description>Recent content in Reviews on My big bazar</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Jan 2026 17:59:40 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reviews/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Movie rankings</title>
+      <link>http://localhost:1313/posts/movies/</link>
+      <pubDate>Sat, 03 Jan 2026 12:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/movies/</guid>
+      <description>&lt;p&gt;Hi there ! Here’s my running movie ranking 📽️ ! It doesn&amp;rsquo;t get more straightforward than that.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
