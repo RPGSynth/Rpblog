@@ -135,6 +135,27 @@ This is one of the moments where the text shows how deeply theological it is. Ki
 
 Of course, if you don’t believe in God, you might feel that the first definition is enough—and that trying to be yourself cannot, *by itself*, be despair. Kierkegaard refuses that. And honestly, at this point it’s hard to sort everything into simple “right” or “wrong.” I also don’t think that’s what the essay is trying to do: it never sets out to prove or disprove the existence of God. God is assumed as a given, and the whole argument unfolds from that starting point.
 
-
 ### Possibility and Actuality of Despair
+
+This is the part I struggled with at first—probably because I hadn’t really been exposed (before Kierkegaard) to the whole philosophy dialogue around *actuality vs possibility* (and, later, *necessity vs possibility*). Here, Kierkegaard explains why despair is what he calls **dialectical**: because despair is self-reflective, it can’t be described as a simple possibility *or* a simple actuality. It is both at once, tied together in movement. He will later extend this structure to other opposed pairs as well (finitude/infinitude, temporal/eternal, etc.).
+
+Kierkegaard starts with a tempting question: isn’t despair—at least as a *possibility*—a good thing? One might think that the possibility of despair is an advantage over the beast. After all, a tuna (some might heavily disagree, but that deserves an other -series of- post) cannot despair because it has no spirit. The fact that we can despair proves we have a relationship to the eternal, it makes the human closer to God, since after all he writes
+
+> To be healed of this sickness is the Christian bliss.
+
+But he immediately corrects this.
+In a normal case, possibility and actuality don’t relate in a dialectical way. I’m paraphrasing, but he basically says: *Normally, if it’s an advantage to be able to be something, it is an even greater advantage to actually be it.* But with despair, it doesn’t work like that. The **possibility** of despair can indeed be an advantage (and even an infinite one, if it leads the despairer toward God). Yet the **actuality** of despair is also infinitely dangerous, because in despair the self can lose itself—perhaps forever.
+
+And because despair is dialectical, because possibility and actuality are always intertwined, always together yet always opposed—we have to fight it constantly. The positive “actuality” of *not* being in despair is not something that simply *rests there*: it is a kind of negation, the possibility of despair continually held in check—an annihilated possibility.
+
+Another important point: the synthesis (the spirit–body relation, also called the soul) is *only* the **possibility** of despair. If despair were the **actuality** built into human nature from the start, then despair would be universal and “normal”—and in that case it wouldn’t really be despair at all. Despair is born out of imbalance of something unnatural. So yes, despair is a possibility—but not in the way a simple illness is a possibility. It is birn from an ongoing confusion of the self of which we are responsible. To make this clearer, Kierkegaard gives a long example (and honestly, I think he knows the reader needs help here). When a sick person catches a disease, we can say: first there was the possibility of the disease, then at some point it became actual. We can even trace the moment (roughly) when it began. It would be strange to say the person “catches the disease at every instant.” But with despair, Kierkegaard says something like this: *every moment of actuality remains tied to possibility*. Despair doesn’t start cleanly at one fixed time, the way a disease does. At any moment, a person either is or isn’t in despair—and Kierkegaard makes it clear that *not* being in despair is much harder than being in it. Despair is born from the self, and since the self is recursive, you can’t simply step outside of it. You can’t escape the self, so you can’t escape the despair unless you are extremely careful.
+
+At that point you might think about suicide as an escape (that escalated quickly !!!). But for Kierkegaard this doesn’t even solve anything, because the self is tied to God and therefore tied to the eternal. So bodily death is not the exit it seems to be. It becomes, instead, another expression of not willing to be oneself—precisely the sickness unto death. You don’t “die” in the usual physical sense; you “die” more deeply, spiritually, as the self breaks in relation to eternity. 
+(Not the most fun section 😅 But don’t worry—it *does* get better later.)
+
+**In summary :** The synthesis is the structure that gives us the capacity for despair (possibility), but it is our failure to actively balance and ground that structure in God that makes the sickness real (actuality) at every single instant.
+{{< figure src="Graphs/kk_dialectical.png" caption="A dialectical concept for Kierkegaard." >}}
+### Despair as a deadly sickness
+This paragraph goes in much more depth about death and how despair truly kills you (yahoouh ! ).
+
 {{< /chapter >}}
