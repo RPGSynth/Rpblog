@@ -155,7 +155,48 @@ At that point you might think about suicide as an escape (that escalated quickly
 
 **In summary :** The synthesis is the structure that gives us the capacity for despair (possibility), but it is our failure to actively balance and ground that structure in God that makes the sickness real (actuality) at every single instant.
 {{< figure src="Graphs/kk_dialectical.png" caption="A dialectical concept for Kierkegaard." >}}
-### Despair as a deadly sickness
-This paragraph goes in much more depth about death and how despair truly kills you (yahoouh ! ).
 
+### Despair as a deadly sickness
+
+This section goes much deeper into what “death” means here, and how despair *truly* kills you (to continue on fun and joy).
+
+As we already said, a “sickness unto death” is a sickness that ultimately leads to death. But for Kierkegaard this is not death in a figurative sense nor is it ultimate. It is an absolute kind of death—and it is **not** bodily death (at least not from the believer’s point of view). He writes:
+
+> “There is from the Christian standpoint no earthly, bodily sickness unto death. For death is doubtless the last phase of the sickness unto death [...]. It must be one in which the last thing is death and death is the last thing, and this is precisely despair.”
+
+The twist of despair is that, even though it is described as a “death,” it does not simply *kill*. Kierkegaard says:
+
+> “The torment is precisely this, not to be able to die.”
+
+And that makes sense in his framework: despair is so dreadful that it can overshadow bodily death itself.
+
+> “When death is the grandest danger, one hopes for life; but when one becomes acquainted with an even more dreadful danger, one hopes for death.”
+
+So yes: the despairing person may seek bodily death because life becomes unbearable—or at least that is the direction despair can drift toward. But Kierkegaard’s tragic point is that “the despairing man cannot die,” precisely because the self is tied to the eternal. In other words, suicide is not a real escape. At best, it would only be despair standing before eternity.
+
+Worse, despair is self-consuming. Because it is a sickness of the self—and the self is recursive, inward, a relation that turns back on itself—despair eats at you moment by moment. And realizing that you are in despair often makes you even more despairing. The despairer consumes himself… and yet, tragically, cannot be consumed completely. He is condemned to remain.
+
+> “By despair, fire has entered into something that cannot burn, or cannot burn up, that is, into the self.”
+
+Kierkegaard also insists that when someone despairs *over something*, they are in fact despairing *over themselves*. Because despair is a sickness of the self. His example is telling:
+
+> “Because he did not become Caesar he now cannot endure to be himself. So properly, he is not in despair over the fact that he did not become Caesar but he is in despair over himself for the fact that he did not become Caesar. [...] If he had become Caesar he would have been rid of himself in desperation but now that he did not become Caesar he cannot in desperation get rid of himself. Essentially he is equally in despair.”
+
+The point is brutal: as long as the person is not “in phase” with himself, becoming someone else—someone supposedly better—doesn’t solve anything. It just becomes another way of refusing the self: either by pretending, or by failing, or by hating what one is.
+
+For Kierkegaard, this impossibility of “burning up”—this inability to die even while being consumed—is itself a sign of the eternal:
+
+> “So also we can demonstrate the eternal in man from the fact that despair cannot consume his self, that this precisely is the torment of contradiction of despair.”
+
+This is also where responsibility comes in. Even if we don’t *know* we are in despair—if we lose ourselves in comfort or happiness in a way that makes despair invisible—Kierkegaard thinks that can still be despair: another form of not willing to be our true self (and, ultimately, of not relating ourselves to God).
+
+He writes:
+
+> “And thus in eternity, one must act, because to have a self is the greatest concession made to man, but at the same time it is eternity's demand upon him.”
+
+A beautiful sentence (one of many): the self is a gift, but also a responsibility before eternity. And it is precisely failing to carry that responsibility—failing to “be” the self rightly—that opens the space for despair.
+
+{{< /chapter >}}
+
+{{< chapter title="The Universlality of Despair" >}}
 {{< /chapter >}}
