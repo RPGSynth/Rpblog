@@ -6,8 +6,15 @@
     <description>Recent content in Categories on My big bazar</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Jan 2026 13:29:50 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jan 2026 21:55:52 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/categories/ai/</link>
+      <pubDate>Tue, 06 Jan 2026 09:21:00 +0100</pubDate>
+      <guid>http://localhost:1313/categories/ai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Movies</title>
       <link>http://localhost:1313/categories/movies/</link>
@@ -37,10 +44,10 @@
       <description></description>
     </item>
     <item>
-      <title>Presentation</title>
-      <link>http://localhost:1313/categories/presentation/</link>
+      <title>About Me</title>
+      <link>http://localhost:1313/categories/about-me/</link>
       <pubDate>Wed, 31 Dec 2025 11:59:19 +0100</pubDate>
-      <guid>http://localhost:1313/categories/presentation/</guid>
+      <guid>http://localhost:1313/categories/about-me/</guid>
       <description></description>
     </item>
   </channel>

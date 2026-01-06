@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en"
+  x-data
+  :class="$store.darkMode.isDark() ? 'dark' : 'light'"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local AI Shenanigans  | My big bazar</title>
+
+    
+
+<link rel="canonical" href="http://localhost:1313/posts/localai/" />
+
+
+
+<meta name="author" content="Rob" />
+<meta name="description" content="My little adventure in Local AI (STT &#43; Local LLMs) In this post I’ll show you how I navigated the Local AI world.
+Local AI = the world where your AI runs on your own machine (or a private server), so you can avoid those pesky money-grabbing companies.
+(Just kidding. I’m not against you guys hiring me.)
+" />
+
+
+<meta name="keywords" content="Local AI">
+
+
+
+<meta name="generator" content="Hugo 0.154.1">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/localai/">
+  <meta property="og:site_name" content="My big bazar">
+  <meta property="og:title" content="Local AI Shenanigans ">
+  <meta property="og:description" content="My little adventure in Local AI (STT &#43; Local LLMs) In this post I’ll show you how I navigated the Local AI world.
+Local AI = the world where your AI runs on your own machine (or a private server), so you can avoid those pesky money-grabbing companies.
+(Just kidding. I’m not against you guys hiring me.)">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-06T09:21:00+01:00">
+    <meta property="article:modified_time" content="2026-01-06T22:02:35+01:00">
+    <meta property="article:tag" content="Local AI">
+    <meta property="og:image" content="http://localhost:1313/posts/localai/Cover.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/posts/localai/Cover.png">
+  <meta name="twitter:title" content="Local AI Shenanigans ">
+  <meta name="twitter:description" content="My little adventure in Local AI (STT &#43; Local LLMs) In this post I’ll show you how I navigated the Local AI world.
+Local AI = the world where your AI runs on your own machine (or a private server), so you can avoid those pesky money-grabbing companies.
+(Just kidding. I’m not against you guys hiring me.)">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script>
+      window.lightTheme = 'emerald'
+      window.darkTheme = 'forest'
+
+      ;(function() {
+        const isDark = ('hugo-theme-dream-is-dark' in localStorage)
+          ? window.localStorage.getItem('hugo-theme-dream-is-dark') === 'y'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+        const theme = isDark ? window.darkTheme : window.lightTheme
+
+        document.documentElement.setAttribute('data-theme', theme)
+      })()
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.1/dist/cdn.min.js" integrity="sha256-Rmqrc5SKeSLTSnQ9shSKWmJco1ks8c1hLI8UG2Np03M=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/img/avatar.png" alt="" />
+        </div>
+      </div>
+
+      
+    </section>
+
+    
+    
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
+        
+
+
+
+
+
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+
+
+
+
+<div role="link" tabindex="0" class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title="About">About</div>
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="Local AI Shenanigans ">
+  <meta itemprop="description" content="My little adventure in Local AI (STT &#43; Local LLMs) In this post I’ll show you how I navigated the Local AI world.
+Local AI = the world where your AI runs on your own machine (or a private server), so you can avoid those pesky money-grabbing companies.
+(Just kidding. I’m not against you guys hiring me.)">
+  <meta itemprop="datePublished" content="2026-01-06T09:21:00+01:00">
+  <meta itemprop="dateModified" content="2026-01-06T22:02:35+01:00">
+  <meta itemprop="wordCount" content="738">
+  <meta itemprop="image" content="http://localhost:1313/posts/localai/Cover.png">
+  <meta itemprop="keywords" content="Local AI">
+
+      <header>
+        <h1 itemprop="headline">Local AI Shenanigans </h1>
+        <p class="text-sm">
+          
+            Tuesday, Jan 6, 2026
+          
+
+          | <span>4 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Tuesday, Jan 6, 2026
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Rob</span>
+    
+  
+  </span>
+</div>
+
+          
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=Local%20AI%20Shenanigans%20&amp;url=http://localhost:1313/posts/localai/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/localai/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Local%20AI%20Shenanigans%20%20http://localhost:1313/posts/localai/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+
+        <h2 id="my-little-adventure-in-local-ai-stt--local-llms">My little adventure in Local AI (STT + Local LLMs)</h2>
+<p>In this post I’ll show you how I navigated the Local AI world.</p>
+<p>Local AI = the world where your AI runs <strong>on your own machine</strong> (or a private server), so you can avoid those pesky money-grabbing companies.<br>
+<em>(Just kidding. I’m not against you guys hiring me.)</em></p>
+<p>To be fair, I already touched this subject back when I worked in an insurance company, so I didn’t fall into it totally by accident — but there <strong>was</strong> some relearning required.</p>
+<p>If any of the words below look like Chinese to you (it probably will), don’t worry — I’ll explain everything in greater depth later 😄<br>
+For now: just follow the vibe.</p>
+<h2 id="step-1-local-stt-and-the-classic-dependency-pain">Step 1: Local STT… and the classic dependency pain</h2>
+<p>The first thing I wanted was a simple <strong>local STT</strong> (Speech-to-Text).</p>
+<p>I’m not completely agnostic to Anaconda lol, but I figured a simple <code>pip install</code> would be enough.</p>
+<p>While digging, I found out the best current STT model you can run locally is <strong>Whisper</strong> (OpenAI). Then I learned there’s a faster version called <strong>faster-whisper</strong>, which can use an Nvidia GPU to speed up transcription.</p>
+<p>So naturally I thought:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install faster-whisper
+</span></span></code></pre></div><p>Naturally it wasn’t that simple.</p>
+<h3 id="the-dependency-parade">The dependency parade</h3>
+<p>I had to install a bunch of packages that weren’t really marked as essential, but in practice were needed to make the pip installation behave (classic).
+Things like:</p>
+<ul>
+<li><code>ffmpeg</code></li>
+<li><code>setuptools</code></li>
+<li><code>huggingface_hub</code></li>
+<li><code>tqdm</code></li>
+<li><code>tokenizers</code></li>
+</ul>
+<p>I already knew most of them, but I hadn’t touched Hugging Face in a long time. And for some reason, if I didn’t install these <em>before</em> <code>faster-whisper</code> (even with its own dependencies), the install would fail.</p>
+<p>Then came the GPU side of the fun:</p>
+<ul>
+<li>I needed <strong>cuDNN</strong></li>
+<li>and of course the <strong>CUDA drivers</strong> (thankfully already on my machine)</li>
+</ul>
+<p>So I updated my CUDA drivers.</p>
+<p>But I shouldn’t have.</p>
+<p>Because then <strong>ctranslate2</strong> (a dependency of <code>faster-whisper</code>) started failing since it wanted <strong>CUDA 12.x</strong>, not <strong>CUDA 13</strong> :DDD</p>
+<p>Fair to say it took me a bit of time… but I finally got it working.</p>
+<h3 id="results-genuinely-mind-blowing">Results: genuinely mind-blowing</h3>
+<p>I was <em>very</em> pleasantly surprised. I’d been a bit away from local AI recently (or AI in general), so I didn’t expect <code>faster-whisper</code> to be this efficient.</p>
+<p>It’s mind-blowingly good: <strong>fast as hell</strong>, accurate, and easy to use. Childish even.
+Even the <strong>small</strong> model gives fantastic results.</p>
+<p>Here’s a tiny snippet to give an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> faster_whisper <span style="color:#f92672">import</span> WhisperModel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>model_size <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;small&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Run on GPU with FP16</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> WhisperModel(model_size)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>segments, info <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>transcribe(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;audio_samples/Therapie.mp3&#34;</span>, beam_size<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><hr>
+<h3 id="step-2-turning-on-the-real-beast--local-llms">Step 2: Turning on the real beast — Local LLMs</h3>
+<p>Then I turned on the real beast: <strong>local LLMs</strong>.</p>
+<p>From my past internship experience, I remembered the ecosystem could be… kind of a mess.</p>
+<p>At first I tried the old way:</p>
+<ul>
+<li><code>llama.cpp</code> (easy enough, I had already done it before)</li>
+<li>and then I installed <strong>Ollama</strong>, which for some godforsaken reason refused to recognize that I had a GPU.</li>
+</ul>
+<figure><img src="/posts/localai/img/SadOllama.png"
+    alt="Ollama made me sad."><figcaption>
+      <p>Ollama made me sad.</p>
+    </figcaption>
+</figure>
+
+<p>So I tried running models directly from the Hugging Face Python SDK. I downloaded <strong>Gemma 12B</strong>, but I got dissatisfied because I couldn’t use a <strong>GGUF</strong> model easily, so I kinda threw that approach away.</p>
+<p>That said: I’m still very impressed by even the smallest local LLMs now.
+Even <strong>Gemma 1B</strong> manages to create coherent JSONs.</p>
+<p>That might sound obvious to you, but it wasn’t the case with Mistral a year and a half ago 😅</p>
+<p><figure><img src="/posts/localai/img/gemmaSetup.png"
+    alt="Setting up Gemma directly from the HF SDK."><figcaption>
+      <p>Setting up Gemma directly from the HF SDK.</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/posts/localai/img/Gemma1B.png"
+    alt="Gemma 1B behaving surprisingly well."><figcaption>
+      <p>Gemma 1B behaving surprisingly well.</p>
+    </figcaption>
+</figure>
+</p>
+<hr>
+<h3 id="lm-studio">LM Studio</h3>
+<p>Then I discovered an incredible alternative: <strong>LM Studio</strong>.</p>
+<p>That little baby didn’t exist back in my days, but honestly: it’s fantastic.</p>
+<p>It’s visually clean, easy to use, and the SDK isn’t full of boilerplate or weird fragmentation — just the good stuff.</p>
+<figure><img src="/posts/localai/img/LMStudio.png"
+    alt="LM Studio instantly became my favorite."><figcaption>
+      <p>LM Studio instantly became my favorite.</p>
+    </figcaption>
+</figure>
+
+<p>Using LM Studio and its SDK, I quickly grabbed a quantized <strong>Gemma 12B</strong> and used it to summarize the audio file I had just transcribed.</p>
+<p>And I was genuinely shocked by the speed and accuracy.</p>
+<p><strong>12B parameters only</strong>, and the results are good. Truly amazing.</p>
+<p>I might be late to the hype train, but when you get a solid result in <strong>~17 seconds for a 45 minutes monologue</strong>, the idea of building a real local application suddenly becomes completely realistic.</p>
+<p>And that’s the main goal here
+For now, you can check my very tiny example on GitHub (much more to come soon ! ):</p>
+<p><a href="https://github.com/RPGSynth/STT_App" target="_blank">https://github.com/RPGSynth/STT_App</a>
+</p>
+
+        
+      </section>
+
+      
+
+      
+    </article>
+  </div>
+
+  <div
+    x-data="tocHighlighter()"
+    @scroll.window="debouncedScroll"
+    class="hidden lg:flex lg:flex-col lg:items-end"
+  >
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#my-little-adventure-in-local-ai-stt--local-llms">My little adventure in Local AI (STT + Local LLMs)</a></li>
+    <li><a href="#step-1-local-stt-and-the-classic-dependency-pain">Step 1: Local STT… and the classic dependency pain</a>
+      <ul>
+        <li><a href="#the-dependency-parade">The dependency parade</a></li>
+        <li><a href="#results-genuinely-mind-blowing">Results: genuinely mind-blowing</a></li>
+        <li><a href="#step-2-turning-on-the-real-beast--local-llms">Step 2: Turning on the real beast — Local LLMs</a></li>
+        <li><a href="#lm-studio">LM Studio</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2026 My big bazar</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">About me</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Hi! I’m a young data scientist— and, dare I say, a humanist too.<br>
+I like studying a bit of everything, and this blog is my place to collect those curiosities: ideas, readings, side projects, and whatever else catches my attention.</p>
+<p>I hope you find something interesting here.</p>
+<p>Welcome to my big bazaar.</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2026 My big bazar</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-8 px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+<script src="/js/toc.js"></script>
+
+
+
+
+  
+
+
+
+
+    
+
+    
+      <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [
+        ['\\[', '\\]'],
+        ['$$', '$$'],
+      ], 
+      inlineMath: [
+        ['\\(', '\\)'],
+        ['$', '$'],
+      ], 
+    },
+  }
+</script>
+
+    
+
+    
+    <script src="/js/movies-table.js"></script>
+    
+
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -198,5 +198,5 @@ A beautiful sentence (one of many): the self is a gift, but also a responsibilit
 
 {{< /chapter >}}
 
-{{< chapter title="The Universlality of Despair" >}}
+{{< chapter title="The Universality of Despair" >}}
 {{< /chapter >}}

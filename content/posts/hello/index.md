@@ -7,7 +7,7 @@ author: Rob
 # authorlink: https://author.site
 cover: avatar.png
 categories:
-  - presentation
+  - About me
 images:
   - avatar.png
 draft: false
