@@ -6,14 +6,14 @@
     <description>Recent content in Posts on My big bazar</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Jan 2026 21:55:52 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jan 2026 11:30:04 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Shader adventures</title>
+      <title>Local AI Shenanigans </title>
       <link>http://localhost:1313/posts/localai/</link>
       <pubDate>Tue, 06 Jan 2026 09:21:00 +0100</pubDate>
       <guid>http://localhost:1313/posts/localai/</guid>
-      <description>&lt;h2 id=&#34;my-little-adventure-in-local-ai-stt--local-llms&#34;&gt;My little adventure in Local AI (STT + Local LLMs)&lt;/h2&gt;&#xA;&lt;p&gt;In this post I’ll show you how I navigated the Local AI world.&lt;/p&gt;&#xA;&lt;p&gt;Local AI = the world where your AI runs &lt;strong&gt;on your own machine&lt;/strong&gt; (or a private server), so you can avoid those pesky money-grabbing companies.&lt;br&gt;&#xA;&lt;em&gt;(Just kidding. I’m not against you guys hiring me.)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;To be fair, I already touched this subject back when I worked in an insurance company, so I didn’t fall into it totally by accident — but there &lt;strong&gt;was&lt;/strong&gt; some relearning required.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;my-little-adventure-in-local-ai-stt--local-llms&#34;&gt;My little adventure in Local AI (STT + Local LLMs)&lt;/h2&gt;&#xA;&lt;p&gt;In this post I’ll show you how I navigated the Local AI world.&lt;/p&gt;&#xA;&lt;p&gt;Local AI = the world where your AI runs &lt;strong&gt;on your own machine&lt;/strong&gt; (or a private server), so you can avoid those pesky money-grabbing companies.&lt;br&gt;&#xA;&lt;em&gt;(Just kidding. I’m not against you guys hiring me.)&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Movie rankings</title>

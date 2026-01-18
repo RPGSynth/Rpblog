@@ -199,4 +199,60 @@ A beautiful sentence (one of many): the self is a gift, but also a responsibilit
 {{< /chapter >}}
 
 {{< chapter title="The Universality of Despair" >}}
+This chapter opens with an idea I really like:
+
+> “There lives perhaps not one single man who is in perfect health, so one might say perhaps that there lives not one single man who after all is not to some extent in despair.”
+
+Here Kierkegaard recognizes that despair is what I would call a *smooth* concept: more like a continuous field of infinite nuance than a neat little category you either belong to or not. And since I’m generally a big partisan of “the world is smooth, not classified,” I enjoy this a lot.
+
+He then pushes it further:
+
+> “There lives no one outside of Christendom who is not in despair.”
+
+So essentially, all non-Christians (whom he later calls “pagans”) are in despair—even if they don’t know it. You might think that’s a pretty depressing conclusion: we’re all doomed to despair from the moment we’re born, and none of us can really escape it. But Kierkegaard doesn’t reduce despair to *suffering*, and he adds something unexpected: this universality is actually **good news**. Why? Because it views every person as somethig bigger, related to God :
+
+> “[...] since it views every man in the aspect of the highest demand made upon him, that he be spirit.”
+
+Now, Kierkegaard also says that in the real world despair is deeply misunderstood. People often treat it like a rare mental illness—something that happens to the unfortunate. He writes:
+
+> “Whoever says that he is in despair is regarded as being in despair, but whoever thinks he is not in despair is not so regarded. Consequently despair becomes a rather rare phenomenon, whereas in fact it is quite universal.”
+
+That rings true to me. Many people can be deeply “out of balance” without putting the word *despair* on it (whether or not you tie that to God is up to you). So the “non-despairing” person is, for Kierkegaard, actually the exception—and trusting someone simply because they say “I’m not in despair” is, at best, naive. After all, one form of despair is precisely **not being aware of it** (and we’ll dive deeper into that later).
+
+He gives a metaphor with bodily illness: a sick person might go to the doctor and insist they’re fine, while the examination reveals the opposite. And the “imaginary sick man” (le *malade imaginaire*) is another case: only the physician can tell who is sick and who is not. So who is the physician of the soul? Kierkegaard doesn’t spell it out here, but I think he makes it… pretty obvious that it is related to the clergy. The main point is: personal experience alone isn’t always reliable, especially when the person claims they are *not* in despair (which is probably the most common case).
+
+Importantly, not even youth or joy escapes the universality of despair. Kierkegaard suggests that despair’s favorite hiding place is *immediate happiness*—because immediacy can function like a shield against reflection, doubt, and “nothingness.” He writes (in a long, very Kierkegaard passage 😅):
+
+> “...for the dearest and most attractive dwelling-place of despair is in the very heart of immediate happiness...”
+
+He even gives the example of “feminine youthfulness,” which we can obviously criticize as old-fashioned language, but the point is clear: even the sweetest, most harmonious kind of youthful joy can still be despair, if it rests on immediacy and refuses the deeper reflection of spirit.
+
+Then another dialectical twist appears: it is a misfortune to have despair, but it is also a misfortune *not* to have it—because then you can’t be healed of it. This will be explored more later, but the intuition is already here: the person who realizes their despair may be closer to leaving it than the person who doesn’t.
+
+Often (and I have to say I agree), it is life’s hardship that awakens spirituality—because it forces reflection, and reflection breaks the illusion of immediacy.
+
+Here something small but interesting happens: Kierkegaard writes **“I seek”** (page 21 in my edition). It’s the first time in the book (so far) that he writes *I*, and it’s worth mentioning. He expresses genuine sadness about human misery. For him, it is tragic that people—even brilliant people—do not see themselves as spirit. He despises how
+
+> “...for the masses of men, the people employ them about everything else, utilize them to generate the power for the theater of life, but never remind them of their blessedness.”
+
+What a strong statement. He goes even further:
+
+> “I could weep for eternity over the fact that such misery exists!”
+
+And the misery he means is this:
+
+> “That despair can be so hidden in a man that he himself does not know it.”
+
+People get used as production tools, stripped of their connection to spirit. And when we die, social status no longer matters, nor anything else—only what we are in relation to the eternal.
+
+He ends the chapter with an ominous judgement (something he hasn’t quite done yet, at least not this directly):
+
+> “Eternity asks of thee and of every individual among these million millions only one question: thou hast lived in despair or not. [...] It knows thee as thou art known, it puts thee under arrest by thyself in despair.”
+
+So: if you lived in despair—whether conscious or unconscious—then despair becomes your arrest. While you are alive, you can still move, change, become yourself. But once you die, there is only what you are. And if you are “disbalanced,” you remain disbalanced.
+
+Of course this all makes sense inside Kierkegaard’s framework: despair is tied to eternity, to the cleanliness of the soul. We can already anticipate that despair will start to look like **sin**—something that judges us before eternity.
+
+{{< /chapter >}}
+{{< chapter title="The Forms of Despair" >}}
 {{< /chapter >}}
